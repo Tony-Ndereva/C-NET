@@ -20,8 +20,7 @@ namespace C_NET
             var result = calculator.Add(1, 2);
             Console.WriteLine(result);
 
-            var practiseArray = new ArrayPractise();
-            practiseArray.PrintArray();
+            ArrayPractise.PrintArray();
         }
     }
 }

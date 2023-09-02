@@ -10,13 +10,14 @@ namespace C_NET.Array
 {
     public class ArrayPractise
     {
-        public  void PrintArray()
+        public  static void PrintArray()
         {
             var numbers = new int[3] { 1, 2, 3 };
             foreach(var number in numbers)
             {
                 Console.WriteLine(number);
             }
+            var names = new string[3] { "Tony", "Trina","Stanley"};
             
         }
        
