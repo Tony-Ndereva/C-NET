@@ -6,9 +6,10 @@ namespace C_NET
     {
         public string FirstName;
         public string LastName;
-        public void Introduce()
+        public void Introduce(string to)
         {
-            Console.WriteLine("My name is " + FirstName + " " + LastName);
+            string name = string.Format("Hi {0}, I am {1}", to, FirstName);
+            Console.WriteLine(name);
         }
     }
 }
