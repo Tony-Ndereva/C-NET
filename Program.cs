@@ -1,10 +1,9 @@
-﻿using C_NET.Constructors;
-using System;
+﻿using C_NET.Composition;
 
 namespace C_NET
 {
- 
-    internal class Program
+
+    internal partial class Program
     {
         static void Main(string[] args)
         {
@@ -31,14 +30,26 @@ namespace C_NET
             //var john = new Person();
             //john.FirstName = "John";
             //john.Introduce("Tony");
-         
-            var James = new Customer(1, "James");
 
-            var order = new Order();
-            James.Orders.Add(order);
-            Console.WriteLine(James.Id);
-            Console.WriteLine(James.Name);
+            //var James = new Customer(1, "James");
+
+            //var order = new Order();
+            //James.Orders.Add(order);
+            //Console.WriteLine(James.Id);
+            //Console.WriteLine(James.Name);
+            //var sheila = new Person(new DateTime(1982, 1, 1));
+
+            //Console.WriteLine(sheila.Age);
+            //var text = new Text();
+            //text.Width = 100;
+            //text.Copy();
+            var dbMigrator = new DbMigrator(new Logger());
+            var logger = new Logger();
+            var installer = new Installer(logger);
+            dbMigrator.Migrate();
+            installer.Install();
+
         }
     }
-}
+} 
 
