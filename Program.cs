@@ -1,4 +1,6 @@
 ﻿using C_NET.Composition;
+using C_NET.Constructors_Inheritance;
+using C_NET.Upcasting_Downcasting;
 
 namespace C_NET
 {
@@ -43,11 +45,17 @@ namespace C_NET
             //var text = new Text();
             //text.Width = 100;
             //text.Copy();
-            var dbMigrator = new DbMigrator(new Logger());
-            var logger = new Logger();
-            var installer = new Installer(logger);
-            dbMigrator.Migrate();
-            installer.Install();
+            /*  var dbMigrator = new DbMigrator(new Logger());
+              var logger = new Logger();
+              var installer = new Installer(logger);
+              dbMigrator.Migrate();
+              installer.Install();
+
+  */
+            //var car = new Car("XYZ-1234");
+            Text text = new Text();
+            Shape shape = text;
+
 
         }
     }
