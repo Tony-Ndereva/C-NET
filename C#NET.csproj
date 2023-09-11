@@ -56,6 +56,9 @@
     <Compile Include="Inheritance\PresentationObject.cs" />
     <Compile Include="Lists\ListPractise.cs" />
     <Compile Include="Math\Calculator.cs" />
+    <Compile Include="MethodOverriding\Position.cs" />
+    <Compile Include="MethodOverriding\Shape.cs" />
+    <Compile Include="MethodOverriding\ShapeType.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Inheritance\Text.cs" />
