@@ -1,7 +1,4 @@
 ﻿using System;
-using System.IO;
-using C_NET.Composition;
-using C_NET.Constructors_Inheritance;
 using C_NET.Upcasting_Downcasting;
 
 namespace C_NET
@@ -20,7 +17,7 @@ namespace C_NET
             //Calculator calculator = new Calculator();
 
             //var result = calculator.Add(1, 2);
-            //Console.WriteLine(result);
+            //Console.WriteLine(result); 
 
             //ArrayPractise.PrintArray();
             //var method = ShippingMethods.Express;
@@ -55,10 +52,13 @@ namespace C_NET
 
   */
             //var car = new Car("XYZ-1234");
-
-
+            Text text = new Text();
+            Shape shape = text;
+            text.Width = 200;
+            shape.Width = 100;
+            Console.WriteLine(text.Width);
 
         }
     }
-} 
+}
 
