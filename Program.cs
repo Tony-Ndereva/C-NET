@@ -1,5 +1,5 @@
-﻿using System;
-using C_NET.Upcasting_Downcasting;
+﻿using C_NET.Upcasting_Downcasting;
+using System;
 
 namespace C_NET
 {
@@ -52,11 +52,22 @@ namespace C_NET
 
   */
             //var car = new Car("XYZ-1234");
-            Text text = new Text();
-            Shape shape = text;
-            text.Width = 200;
-            shape.Width = 100;
-            Console.WriteLine(text.Width);
+            //Text text = new Text();
+            //Shape shape = text;
+            //text.Width = 100;
+            //shape.Width = 200;
+            //Console.WriteLine(text.Width);
+            //StreamReader reader = new StreamReader(new MemoryStream());
+            // ArrayList list = new ArrayList();
+            // list.Add(1);
+            // list.Add("Mosh");
+            // list.Add(new Text());
+
+            //var anotherList = new List<Shape>();
+            Shape shape = new Text();
+            Text text = (Text)shape;
+            Console.WriteLine(1 + 2);
+
 
         }
     }
