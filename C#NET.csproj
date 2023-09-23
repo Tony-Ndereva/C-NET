@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="AccessModifiers\Person.cs" />
     <Compile Include="Array\Array.cs" />
+    <Compile Include="Boxing&amp;Unboxing\Boxing.cs" />
     <Compile Include="Composition\DbMigrator.cs" />
     <Compile Include="Composition\Installer.cs" />
     <Compile Include="Composition\Logger.cs" />
@@ -56,9 +57,11 @@
     <Compile Include="Inheritance\PresentationObject.cs" />
     <Compile Include="Lists\ListPractise.cs" />
     <Compile Include="Math\Calculator.cs" />
+    <Compile Include="MethodOverriding\Canvas.cs" />
+    <Compile Include="MethodOverriding\Circle.cs" />
     <Compile Include="MethodOverriding\Position.cs" />
+    <Compile Include="MethodOverriding\Rectangle.cs" />
     <Compile Include="MethodOverriding\Shape.cs" />
-    <Compile Include="MethodOverriding\ShapeType.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Inheritance\Text.cs" />
@@ -68,8 +71,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Boxing&amp;Unboxing\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

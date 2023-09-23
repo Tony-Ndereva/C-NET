@@ -1,7 +1,4 @@
-﻿using C_NET.Upcasting_Downcasting;
-using System;
-
-namespace C_NET
+﻿namespace C_NET
 {
 
     internal partial class Program
@@ -64,9 +61,12 @@ namespace C_NET
             // list.Add(new Text());
 
             //var anotherList = new List<Shape>();
-            Shape shape = new Text();
-            Text text = (Text)shape;
-            Console.WriteLine(1 + 2);
+            //Shape shape = new Text();
+            //Text text = (Text)shape;
+            //Console.WriteLine(1 + 2);
+            //Boxing boxing = new Boxing();
+            //boxing.list.Add(1);
+            //var shapes = new List<Shape>();
 
 
         }
