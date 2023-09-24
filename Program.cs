@@ -1,4 +1,6 @@
-﻿namespace C_NET
+﻿using C_NET.AbstractClasses_Members;
+
+namespace C_NET
 {
 
     internal partial class Program
@@ -67,7 +69,11 @@
             //Boxing boxing = new Boxing();
             //boxing.list.Add(1);
             //var shapes = new List<Shape>();
-
+            //Shape shape = new Shape();
+            Circle circle = new Circle();
+            circle.Draw();
+            Rectangle rectangle = new Rectangle();
+            rectangle.Draw();
 
         }
     }

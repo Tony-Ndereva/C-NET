@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractClasses&amp;Members\Circle.cs" />
+    <Compile Include="AbstractClasses&amp;Members\Rectangle.cs" />
+    <Compile Include="AbstractClasses&amp;Members\Shape.cs" />
     <Compile Include="AccessModifiers\Person.cs" />
     <Compile Include="Array\Array.cs" />
     <Compile Include="Boxing&amp;Unboxing\Boxing.cs" />
