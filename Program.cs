@@ -5,6 +5,11 @@ namespace C_NET
 
     internal partial class Program
     {
+
+        public interface ITaxCalculator
+        {
+            int Calculate();
+        }
         static void Main(string[] args)
         {
 
