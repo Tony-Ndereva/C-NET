@@ -58,7 +58,13 @@
     <Compile Include="Constructors\Order.cs" />
     <Compile Include="Enums\ShippingMethods.cs" />
     <Compile Include="Inheritance\PresentationObject.cs" />
-    <Compile Include="Interfaces\OrderProcessor.cs" />
+    <Compile Include="Interfaces\Car.cs" />
+    <Compile Include="Interfaces\Chair.cs" />
+    <Compile Include="Interfaces\Furniture.cs" />
+    <Compile Include="Interfaces\IDestroyAble.cs" />
+    <Compile Include="Interfaces\Person.cs" />
+    <Compile Include="Interfaces\Ticket.cs" />
+    <Compile Include="Interfaces\Vehicle.cs" />
     <Compile Include="Lists\ListPractise.cs" />
     <Compile Include="Math\Calculator.cs" />
     <Compile Include="MethodOverriding\Canvas.cs" />

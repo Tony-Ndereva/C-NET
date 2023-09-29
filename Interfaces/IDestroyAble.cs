@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace C_NET.Interfaces
+{
+    public interface IDestroyAble
+    {
+        string DestructionSound { get; set; }
+        void Destroy();
+    }
+}

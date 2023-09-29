@@ -1,4 +1,6 @@
-﻿using C_NET.AbstractClasses_Members;
+﻿using System;
+using C_NET.AbstractClasses_Members;
+using C_NET.Interfaces;
 
 namespace C_NET
 {
@@ -75,10 +77,13 @@ namespace C_NET
             //boxing.list.Add(1);
             //var shapes = new List<Shape>();
             //Shape shape = new Shape();
-            Circle circle = new Circle();
+            /*Circle circle = new Circle();
             circle.Draw();
             Rectangle rectangle = new Rectangle();
-            rectangle.Draw();
+            rectangle.Draw();*/
+            Ticket t1 = new Ticket(10);
+            Ticket t2 = new Ticket(10);
+            Console.WriteLine(t2.Equals(t1));
 
         }
     }
