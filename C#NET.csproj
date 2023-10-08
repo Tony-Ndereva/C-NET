@@ -57,6 +57,7 @@
     <Compile Include="Constructors\Customer.cs" />
     <Compile Include="Constructors\Order.cs" />
     <Compile Include="Enums\ShippingMethods.cs" />
+    <Compile Include="Generics\Generics.cs" />
     <Compile Include="Inheritance\PresentationObject.cs" />
     <Compile Include="Interfaces\Car.cs" />
     <Compile Include="Interfaces\Chair.cs" />

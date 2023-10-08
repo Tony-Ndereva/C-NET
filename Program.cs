@@ -1,6 +1,8 @@
 ﻿using System;
 using C_NET.AbstractClasses_Members;
+using C_NET.Constructors;
 using C_NET.Interfaces;
+using C_NET.Generics;
 
 namespace C_NET
 {
@@ -81,10 +83,10 @@ namespace C_NET
             circle.Draw();
             Rectangle rectangle = new Rectangle();
             rectangle.Draw();*/
-            Ticket t1 = new Ticket(10);
-            Ticket t2 = new Ticket(10);
-            Console.WriteLine(t2.Equals(t1));
 
+            int[] intArray = { 1, 2, 3,5 };
+            double[] doubleArray = { 2.0, 6.0 };
+            Iterate.displayElement(doubleArray);
         }
     }
 }
