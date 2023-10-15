@@ -1,8 +1,5 @@
-﻿using System;
-using C_NET.AbstractClasses_Members;
-using C_NET.Constructors;
-using C_NET.Interfaces;
-using C_NET.Generics;
+﻿using C_NET.LambdaExpressions;
+using System;
 
 namespace C_NET
 {
@@ -84,9 +81,31 @@ namespace C_NET
             Rectangle rectangle = new Rectangle();
             rectangle.Draw();*/
 
-            int[] intArray = { 1, 2, 3,5 };
-            double[] doubleArray = { 2.0, 6.0 };
-            Iterate.displayElement(doubleArray);
+            //int[] intArray = { 1, 2, 3,5 };
+            //double[] doubleArray = { 2.0, 6.0 };
+            //Iterate.displayElement(doubleArray);
+            //var photoprocessor = new PhotoProcessor();
+            //var filters = new PhotoFilters();
+            //PhotoProcessor.PhotoFilterHandler filterHandler = 
+            //photoprocessor.Process("");
+            var getSquare = new GetSquare();
+
+            //Console.WriteLine(getSquare.Square(5));
+
+
+            Func<int, int> square = number => number * number; ;
+
+            Console.WriteLine(square(5));
+            var books = new BookRepository().GetBooks();
+           var cheapBooks =  books.FindAll(isCheaperThan10Dollars);
+            foreach(var book in cheapBooks)
+            {
+                Console.WriteLine(book.Title);
+            }
+        }
+        static bool isCheaperThan10Dollars(Book book)
+        {
+            return book.Price < 10;
         }
     }
 }

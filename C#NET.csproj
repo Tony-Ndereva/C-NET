@@ -56,6 +56,9 @@
     <Compile Include="Constructors&amp;Inheritance\Vehicle.cs" />
     <Compile Include="Constructors\Customer.cs" />
     <Compile Include="Constructors\Order.cs" />
+    <Compile Include="Delegates\Photo.cs" />
+    <Compile Include="Delegates\PhotoFilters.cs" />
+    <Compile Include="Delegates\PhotoProcessor.cs" />
     <Compile Include="Enums\ShippingMethods.cs" />
     <Compile Include="Generics\Generics.cs" />
     <Compile Include="Inheritance\PresentationObject.cs" />
@@ -66,6 +69,9 @@
     <Compile Include="Interfaces\Person.cs" />
     <Compile Include="Interfaces\Ticket.cs" />
     <Compile Include="Interfaces\Vehicle.cs" />
+    <Compile Include="LambdaExpressions\Book.cs" />
+    <Compile Include="LambdaExpressions\BookRepository.cs" />
+    <Compile Include="LambdaExpressions\GetSquare.cs" />
     <Compile Include="Lists\ListPractise.cs" />
     <Compile Include="Math\Calculator.cs" />
     <Compile Include="MethodOverriding\Canvas.cs" />
