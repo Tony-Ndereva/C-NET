@@ -1,5 +1,4 @@
-﻿using C_NET.LambdaExpressions;
-using System;
+﻿using C_NET.Events;
 
 namespace C_NET
 {
@@ -88,25 +87,29 @@ namespace C_NET
             //var filters = new PhotoFilters();
             //PhotoProcessor.PhotoFilterHandler filterHandler = 
             //photoprocessor.Process("");
-            var getSquare = new GetSquare();
+            //var getSquare = new GetSquare();
 
-            //Console.WriteLine(getSquare.Square(5));
+            ////Console.WriteLine(getSquare.Square(5));
 
 
-            Func<int, int> square = number => number * number; ;
+            //Func<int, int> square = number => number * number; ;
 
-            Console.WriteLine(square(5));
-            var books = new BookRepository().GetBooks();
-           var cheapBooks =  books.FindAll(isCheaperThan10Dollars);
-            foreach(var book in cheapBooks)
-            {
-                Console.WriteLine(book.Title);
-            }
+            //Console.WriteLine(square(5));
+            //var books = new BookRepository().GetBooks();
+            //var cheapBooks = books.FindAll(book => book.Price < 10);
+            //foreach (var book in cheapBooks)
+            //{
+            //    Console.WriteLine(book.Title);
+            //}
+
+            var video = new Video() { Title = "Video 1" };
+            var videoEncoder = new VideoEncoder();
+            videoEncoder.Encode(video);
         }
-        static bool isCheaperThan10Dollars(Book book)
-        {
-            return book.Price < 10;
-        }
+        //static bool isCheaperThan10Dollars(Book book)
+        //{
+        //    return book.Price < 10;
+        //}
     }
 }
 
